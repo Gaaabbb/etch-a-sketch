@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div id="title">Etch-a-Sketch</div>
+    <div id="container">
+        <div id="options">
+            
+            <input type="color" id="colorPicker" name="color" value="#000000">
+            <label id="colorLabel" for="colorPicker">Color</label>
+            <input name="gridSize" id="gridSize" type="range" value="16" min="1" max="64">
+            <label id="gridSizeInfo" for="gridSize"></label>
+        
+            <div id="rainbowContainer">
+                <input type="checkbox" id="rainbow" name="rainbow">
+                <label id="rainbowLabel" for="rainbow">Rainbow</label>
+            </div>
+
+            <div id="toggleGridContainer">
+                <input type="checkbox" id="toggleGrid" name="toggleGrid">
+                <label id="toggleGridLabel" for="toggleGrid">Toggle Grid</label>
+            </div>
+
+            <button id="reset">Reset</button>
+        </div>
+
+        <div id="boxContainer"></div>
+    </div>
+</body>
+</html>

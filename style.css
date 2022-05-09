@@ -1,0 +1,105 @@
+* {
+    font-family: Roboto, sans-serif;
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    height: 100%;
+}
+body {
+    background-image: url('bg3.jpg');
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 3px 10px;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#boxContainer {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 100%) 0px 0px 50px 5px;
+}
+
+#boxContainer div {
+    box-sizing: border-box;
+}
+
+.border {
+    border: .1vw solid gray;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reset {
+    margin-top: 25px;
+    padding: 6px 0px;
+    width: 80px;
+}
+
+#rainbow, #toggleGrid{
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+#rainbowContainer, #toggleGridContainer {
+    margin-top: 10px;
+    width: 129px;
+}
+
+#rainbowLabel, #toggleGridLabel, #gridSizeInfo, #colorLabel {
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px black;
+    color: white;
+}
+
+#gridSize {
+    margin-top: 80px;
+}
+
+#reset {
+    background-color: #ef0b0b;
+    color: white;
+    font-weight: bolder;
+    border-radius: 25px;
+}
+
+#colorPicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+#colorPicker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
