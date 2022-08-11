@@ -3,8 +3,9 @@ const gridSize = document.querySelector('#gridSize')
 let color = document.querySelector('#colorPicker')
 const reset = document.querySelector('#reset')
 const rainbow = document.querySelector('#rainbow')
+const eraser = document.querySelector('#eraser')
 const toggleGrid = document.querySelector('#toggleGrid')
-toggleGrid.checked = true
+toggleGrid.checked = false
 let mouseDown;
 let boxes;
 
@@ -34,12 +35,14 @@ function colorBox(selected) {
     document.body.onmousedown = () => mouseDown = true
     document.body.onmouseup = () => mouseDown = false
     selected.addEventListener('mousedown', () => {
-        if (rainbow.checked == true) selected.style.backgroundColor = getRandomColor()
+        if (eraser.checked == true) selected.style.backgroundColor = 'white'
+        else if (rainbow.checked == true) selected.style.backgroundColor = getRandomColor()
         else selected.style.backgroundColor = color.value
     })
     selected.addEventListener('mouseenter', () => {
         if (mouseDown == true) {
-            if (rainbow.checked == true) selected.style.backgroundColor = getRandomColor()
+            if (eraser.checked == true) selected.style.backgroundColor = 'white'
+            else if (rainbow.checked == true) selected.style.backgroundColor = getRandomColor()
             else selected.style.backgroundColor = color.value
         }
     })

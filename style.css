@@ -8,7 +8,7 @@ html {
     height: 100%;
 }
 body {
-    background-image: url('bg3.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
     min-height: 100%;
     display: flex;
@@ -60,17 +60,19 @@ body {
     width: 80px;
 }
 
-#rainbow, #toggleGrid{
+#rainbow, #toggleGrid, #eraser{
     transform: scale(1.5);
     margin-right: 10px;
 }
 
-#rainbowContainer, #toggleGridContainer {
+#rainbowContainer, #toggleGridContainer,
+#eraserContainer {
     margin-top: 10px;
     width: 129px;
 }
 
-#rainbowLabel, #toggleGridLabel, #gridSizeInfo, #colorLabel {
+#rainbowLabel, #toggleGridLabel, #gridSizeInfo, 
+#colorLabel, #eraserLabel {
     font-weight: bolder;
     font-size: 20px;
     text-shadow: 1px 1px 0px black;
